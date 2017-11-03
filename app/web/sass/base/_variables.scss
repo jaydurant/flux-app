@@ -1,0 +1,92 @@
+// ----------------------------------------------------------------------
+	// Layout Breakpoints
+// ----------------------------------------------------------------------
+$sassy-large: 1280;
+$sassy-med: 1040;
+$sassy-medsmall: 950;
+$sassy-small: 600;
+$sassy-xsmall: 400;
+
+// ----------------------------------------------------------------------
+	// Font Sizes
+// ----------------------------------------------------------------------
+$regular-size: 12;
+
+// ----------------------------------------------------------------------
+	// Font Families
+// ----------------------------------------------------------------------
+$roboto: 'Roboto', sans-serif;
+
+// ----------------------------------------------------------------------
+  // Grid
+// ----------------------------------------------------------------------
+$grid-columns: 12;
+$full-height: 100%;
+$full-width: 100%;
+
+// ----------------------------------------------------------------------
+  // Color -custom color settings
+// ----------------------------------------------------------------------
+$main-bg-clr: white;
+$header-bg-clr: #363e45;
+$secondary-bg-clr: #DCDCE5;
+
+$reporting-background: #f5f5f5;
+
+$gradient: linear-gradient(40deg, #252244 70%, #1d1d1d);
+$gradient2: linear-gradient(40deg, #2c2851 70%, #1d1d1d);
+
+$dashboard-company-bg-clr: #da1a27;
+$dashboard-header-txt-clr: white;
+$dashboard-stroke1-clr: #1d76aa;
+
+$dashboard-stroke2-clr: #1d76aa;
+
+$dashboard-stroke3-clr: #8a3fff;
+
+$dashboard-stroke4-clr: #b2395e;
+
+$dashboard-stroke5-clr: #b2395e;
+
+$nav-link-clr: #252244;
+$table-head-text-clr: #252244;
+$table-td-text-color: #444444;
+
+$nav-hover-clr: lighten(#ffd800,15%);
+$nav-active-clr: #F25152;
+
+$highlight-clr: #e2872a;
+$widget-header-clr: #545454;
+
+$btn-txt-clr: white;
+$main-btn-bg-clr: #F25152;
+
+$logo-txt-clr: white;
+$fuelx-orange: #f89a3b;
+$logo-x-clr: black;
+
+$form-border-clr: #d4d4d4;
+
+$radio-active-bg-clr: #F25152;
+$radio-active-border-clr: #F25152;
+$radio-inactive-bg-clr: #fff;
+$radio-inactive-border-clr: grey;
+
+$line-chart-txt-clr: #616161;
+$grid-line-clr: #b1b1b1;
+
+$bar-compare-txt-clr: white;
+$bar-compare-box-clr: #090625;
+
+$vert-bar-line-clr: #616161;
+$vert-bar-txt-clr: #2d2d2d;
+
+$tooltip-txt-clr: white;
+$tooltip-bg-clr: grey;
+
+
+// ----------------------------------------------------------------------
+	// Element Sizes
+// ----------------------------------------------------------------------
+
+$header-size: 50;

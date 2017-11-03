@@ -1,0 +1,29 @@
+.container {
+	width: $full-width;
+}
+
+@each $column, $width in (one-tenth:0.10, one-fifth: 0.20,  one-quarter: 0.25, one-third:0.33, one-half: 0.5, six-tenths:0.6, two-thirds: 0.66,three-quarters: 0.75, four-fifths: 0.80, full-width:1){
+	.#{$column}-s {
+		@include inline-block();
+		width: $full-width * $width - 1;
+	}
+}
+
+
+@include min-breakpoint($sassy-small){
+	@each $column, $width in (one-tenth:0.10 , one-fifth: 0.20 ,one-quarter: 0.25, one-third:0.33, one-half: 0.5, six-tenths:0.6, two-thirds: 0.66, three-quarters: 0.75, four-fifths: 0.80, full-width:1){
+		.#{$column}-m {
+			@include inline-block();
+			width: $full-width * $width - 1;
+		}
+	}
+}
+
+@include min-breakpoint($sassy-medsmall){
+	@each $column, $width in (one-tenth:0.10 , one-fifth: 0.20 ,one-quarter: 0.25, one-third:0.33, one-half: 0.5, six-tenths:0.6, two-thirds: 0.66, three-quarters: 0.75, four-fifths: 0.80,  full-width:1){
+		.#{$column}-l {
+			@include inline-block();
+			width: $full-width * $width - 1;
+		}
+	}
+}

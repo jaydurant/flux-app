@@ -1,0 +1,96 @@
+// SassySass ------------------------------------------------------------
+
+%marginAuto {
+  @include margin-auto();
+}
+
+%clearfix {
+  @include clearfix();
+}
+
+%inlineBlock {
+  @include inline-block();
+}
+
+%hideText {
+  @include hide-text();
+}
+
+%fullHeight{
+	height: 100%;
+}
+
+%left {
+  float: left;
+}
+
+%right {
+  float: right;
+}
+
+%fuelx-tables{
+    table {
+        width: 100%;
+        overflow-y: auto;
+        table-layout: fixed;
+        @include box-shadow(1px,1px,1px, 1px, rgba(0,0,0, 0.27));
+        @include rem("font-size",14);
+        @include rem("margin",0,0,10,0);
+    }
+
+    table,
+    th,
+    td {
+        border-collapse: collapse;
+        vertical-align: top;
+        text-align: left;
+    }
+
+    tbody tr:hover {
+        background-color: lighten(#ffd800,35%);
+    }
+
+    thead {
+        background: $gradient;
+        color: $main-bg-clr;
+
+        tr {
+            display: block;
+            position: relative;
+        }
+
+        th {
+            @include rem("padding",5,7,5,7);
+        }
+    }
+
+    th, td {
+        @include rem("width", 98);
+    }
+
+    tbody {
+        display: block;
+        overflow-y: auto;
+        @include rem("height", 250);
+        tr {
+            display: block;
+            position: relative;
+        }
+        td {
+            @include rem("padding",5,0,5,10);
+        }
+    }
+
+    tr:nth-child(even) {
+        background-color: $secondary-bg-clr;
+    }
+
+    th:hover {
+        cursor: pointer;
+    }
+}
+
+%widget-background {
+    background-color: $main-bg-clr;
+    @include box-shadow(1px,1px,1px, 1px, rgba(0,0,0, 0.27));
+}

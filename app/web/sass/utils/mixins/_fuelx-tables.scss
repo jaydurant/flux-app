@@ -1,0 +1,24 @@
+@mixin fuelx-tables(){
+    table,
+    th,
+    td {
+        border-collapse: collapse;
+        vertical-align: top;
+        text-align: right;
+        padding: 7px;
+    }
+
+    tbody tr:hover {
+        background-color: #ffd800;
+    }
+
+    thead th {
+        background-color: #252244;
+        background: linear-gradient(40deg, #252244 70%, #1d1d1d);
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background: hsla(1, 0%, 70%, 0.8);
+    }
+}
