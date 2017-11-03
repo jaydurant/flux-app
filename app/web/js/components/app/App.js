@@ -33,18 +33,21 @@ class App extends Component{
     }
 
     shouldComponentUpdate(nextProps, nextState){
+        const { history } = this.props;
+
         if(nextProps.loginStatus && (nextProps.location.pathname == '/' || nextProps.location.pathname == '/app' )){
-            const { history } = this.props;
             if(nextProps.location.pathname != '/app'){
                  history.push('/app');
             }
            
             return true;
-        } else{
+        } 
 
-            return false;
+        if(!nextProps.loginStatus && nextProps.location.pathname == '/' ){
+            history.push('/login');
         }
-        
+
+        return false;
     }
 
     render(){
